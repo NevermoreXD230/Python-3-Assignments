@@ -1,0 +1,18 @@
+================================================= test session starts =================================================
+platform win32 -- Python 3.8.3, pytest-6.1.1, py-1.9.0, pluggy-0.13.1
+rootdir: C:\Users\White_Devil.XD\Desktop\a
+plugins: timeout-1.4.2
+timeout: 3.0s
+timeout method: thread
+timeout func_only: False
+collected 10 items
+
+test_student.py ..........                                                                                       [100%]
+
+================================================== warnings summary ===================================================
+E:\CONDA\lib\site-packages\pyreadline\py3k_compat.py:8
+  E:\CONDA\lib\site-packages\pyreadline\py3k_compat.py:8: DeprecationWarning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated since Python 3.3, and in 3.9 it will stop working
+    return isinstance(x, collections.Callable)
+
+-- Docs: https://docs.pytest.org/en/stable/warnings.html
+============================================ 10 passed, 1 warning in 0.37s ============================================
