@@ -1,0 +1,317 @@
+================================================= test session starts =================================================
+platform win32 -- Python 3.8.3, pytest-6.1.1, py-1.9.0, pluggy-0.13.1
+rootdir: C:\Users\White_Devil.XD\Desktop\a
+plugins: timeout-1.4.2
+timeout: 5.0s
+timeout method: thread
+timeout func_only: False
+collected 0 items / 1 error
+
+======================================================= ERRORS ========================================================
+__________________________________________ ERROR collecting test_student.py ___________________________________________
+ImportError while importing test module 'C:\Users\White_Devil.XD\Desktop\a\test_student.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+E:\CONDA\lib\importlib\__init__.py:127: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+test_student.py:2: in <module>
+    from a04 import mostTouchableLocker
+E   ImportError: cannot import name 'mostTouchableLocker' from 'a04' (C:\Users\White_Devil.XD\Desktop\a\a04.py)
+================================================== warnings summary ===================================================
+E:\CONDA\lib\site-packages\pyreadline\py3k_compat.py:8
+  E:\CONDA\lib\site-packages\pyreadline\py3k_compat.py:8: DeprecationWarning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated since Python 3.3, and in 3.9 it will stop working
+    return isinstance(x, collections.Callable)
+
+-- Docs: https://docs.pytest.org/en/stable/warnings.html
+=============================================== short test summary info ===============================================
+ERROR test_student.py
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+============================================= 1 warning, 1 error in 1.13s =============================================
+================================================= test session starts =================================================
+platform win32 -- Python 3.8.3, pytest-6.1.1, py-1.9.0, pluggy-0.13.1
+rootdir: C:\Users\White_Devil.XD\Desktop\a
+plugins: timeout-1.4.2
+timeout: 5.0s
+timeout method: thread
+timeout func_only: False
+collected 13 items
+
+test_student.py .......F...F.                                                                                    [100%]
+
+====================================================== FAILURES =======================================================
+__________________________________________________ test_openLocks_8 ___________________________________________________
+
+    def test_openLocks_8():
+>       assert openLocks(1, 0) == 0
+E       assert 1 == 0
+E        +  where 1 = openLocks(1, 0)
+
+test_student.py:30: AssertionError
+_____________________________________________ test_mostTouchableLocker_4 ______________________________________________
+
+    def test_mostTouchableLocker_4():
+>       assert mostTouchableLocker(100, 70) == 60
+E       assert 96 == 60
+E        +  where 96 = mostTouchableLocker(100, 70)
+
+test_student.py:43: AssertionError
+================================================== warnings summary ===================================================
+E:\CONDA\lib\site-packages\pyreadline\py3k_compat.py:8
+  E:\CONDA\lib\site-packages\pyreadline\py3k_compat.py:8: DeprecationWarning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated since Python 3.3, and in 3.9 it will stop working
+    return isinstance(x, collections.Callable)
+
+-- Docs: https://docs.pytest.org/en/stable/warnings.html
+=============================================== short test summary info ===============================================
+FAILED test_student.py::test_openLocks_8 - assert 1 == 0
+FAILED test_student.py::test_mostTouchableLocker_4 - assert 96 == 60
+======================================= 2 failed, 11 passed, 1 warning in 2.14s =======================================
+================================================= test session starts =================================================
+platform win32 -- Python 3.8.3, pytest-6.1.1, py-1.9.0, pluggy-0.13.1
+rootdir: C:\Users\White_Devil.XD\Desktop\a
+plugins: timeout-1.4.2
+timeout: 5.0s
+timeout method: thread
+timeout func_only: False
+collected 13 items
+
+test_student.py ...........F.                                                                                    [100%]
+
+====================================================== FAILURES =======================================================
+_____________________________________________ test_mostTouchableLocker_4 ______________________________________________
+
+    def test_mostTouchableLocker_4():
+>       assert mostTouchableLocker(100, 70) == 60
+E       assert 96 == 60
+E        +  where 96 = mostTouchableLocker(100, 70)
+
+test_student.py:43: AssertionError
+================================================== warnings summary ===================================================
+E:\CONDA\lib\site-packages\pyreadline\py3k_compat.py:8
+  E:\CONDA\lib\site-packages\pyreadline\py3k_compat.py:8: DeprecationWarning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated since Python 3.3, and in 3.9 it will stop working
+    return isinstance(x, collections.Callable)
+
+-- Docs: https://docs.pytest.org/en/stable/warnings.html
+=============================================== short test summary info ===============================================
+FAILED test_student.py::test_mostTouchableLocker_4 - assert 96 == 60
+======================================= 1 failed, 12 passed, 1 warning in 2.28s =======================================
+================================================= test session starts =================================================
+platform win32 -- Python 3.8.3, pytest-6.1.1, py-1.9.0, pluggy-0.13.1
+rootdir: C:\Users\White_Devil.XD\Desktop\a
+plugins: timeout-1.4.2
+timeout: 5.0s
+timeout method: thread
+timeout func_only: False
+collected 13 items
+
+test_student.py .........F...                                                                                    [100%]
+
+====================================================== FAILURES =======================================================
+_____________________________________________ test_mostTouchableLocker_2 ______________________________________________
+
+    def test_mostTouchableLocker_2():
+>       assert mostTouchableLocker(20, 10) == 20
+E       assert 10 == 20
+E        +  where 10 = mostTouchableLocker(20, 10)
+
+test_student.py:37: AssertionError
+================================================== warnings summary ===================================================
+E:\CONDA\lib\site-packages\pyreadline\py3k_compat.py:8
+  E:\CONDA\lib\site-packages\pyreadline\py3k_compat.py:8: DeprecationWarning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated since Python 3.3, and in 3.9 it will stop working
+    return isinstance(x, collections.Callable)
+
+-- Docs: https://docs.pytest.org/en/stable/warnings.html
+=============================================== short test summary info ===============================================
+FAILED test_student.py::test_mostTouchableLocker_2 - assert 10 == 20
+======================================= 1 failed, 12 passed, 1 warning in 2.12s =======================================
+================================================= test session starts =================================================
+platform win32 -- Python 3.8.3, pytest-6.1.1, py-1.9.0, pluggy-0.13.1
+rootdir: C:\Users\White_Devil.XD\Desktop\a
+plugins: timeout-1.4.2
+timeout: 5.0s
+timeout method: thread
+timeout func_only: False
+collected 13 items
+
+test_student.py .........F...                                                                                    [100%]
+
+====================================================== FAILURES =======================================================
+_____________________________________________ test_mostTouchableLocker_2 ______________________________________________
+
+    def test_mostTouchableLocker_2():
+>       assert mostTouchableLocker(20, 10) == 20
+E       assert 10 == 20
+E        +  where 10 = mostTouchableLocker(20, 10)
+
+test_student.py:37: AssertionError
+================================================== warnings summary ===================================================
+E:\CONDA\lib\site-packages\pyreadline\py3k_compat.py:8
+  E:\CONDA\lib\site-packages\pyreadline\py3k_compat.py:8: DeprecationWarning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated since Python 3.3, and in 3.9 it will stop working
+    return isinstance(x, collections.Callable)
+
+-- Docs: https://docs.pytest.org/en/stable/warnings.html
+=============================================== short test summary info ===============================================
+FAILED test_student.py::test_mostTouchableLocker_2 - assert 10 == 20
+======================================= 1 failed, 12 passed, 1 warning in 1.93s =======================================
+================================================= test session starts =================================================
+platform win32 -- Python 3.8.3, pytest-6.1.1, py-1.9.0, pluggy-0.13.1
+rootdir: C:\Users\White_Devil.XD\Desktop\a
+plugins: timeout-1.4.2
+timeout: 5.0s
+timeout method: thread
+timeout func_only: False
+collected 13 items
+
+test_student.py .........F...                                                                                    [100%]
+
+====================================================== FAILURES =======================================================
+_____________________________________________ test_mostTouchableLocker_2 ______________________________________________
+
+    def test_mostTouchableLocker_2():
+>       assert mostTouchableLocker(20, 10) == 20
+E       assert 10 == 20
+E        +  where 10 = mostTouchableLocker(20, 10)
+
+test_student.py:37: AssertionError
+================================================== warnings summary ===================================================
+E:\CONDA\lib\site-packages\pyreadline\py3k_compat.py:8
+  E:\CONDA\lib\site-packages\pyreadline\py3k_compat.py:8: DeprecationWarning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated since Python 3.3, and in 3.9 it will stop working
+    return isinstance(x, collections.Callable)
+
+-- Docs: https://docs.pytest.org/en/stable/warnings.html
+=============================================== short test summary info ===============================================
+FAILED test_student.py::test_mostTouchableLocker_2 - assert 10 == 20
+======================================= 1 failed, 12 passed, 1 warning in 2.00s =======================================
+================================================= test session starts =================================================
+platform win32 -- Python 3.8.3, pytest-6.1.1, py-1.9.0, pluggy-0.13.1
+rootdir: C:\Users\White_Devil.XD\Desktop\a
+plugins: timeout-1.4.2
+timeout: 5.0s
+timeout method: thread
+timeout func_only: False
+collected 13 items
+
+test_student.py .........F...                                                                                    [100%]
+
+====================================================== FAILURES =======================================================
+_____________________________________________ test_mostTouchableLocker_2 ______________________________________________
+
+    def test_mostTouchableLocker_2():
+>       assert mostTouchableLocker(20, 10) == 20
+E       assert 10 == 20
+E        +  where 10 = mostTouchableLocker(20, 10)
+
+test_student.py:37: AssertionError
+================================================== warnings summary ===================================================
+E:\CONDA\lib\site-packages\pyreadline\py3k_compat.py:8
+  E:\CONDA\lib\site-packages\pyreadline\py3k_compat.py:8: DeprecationWarning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated since Python 3.3, and in 3.9 it will stop working
+    return isinstance(x, collections.Callable)
+
+-- Docs: https://docs.pytest.org/en/stable/warnings.html
+=============================================== short test summary info ===============================================
+FAILED test_student.py::test_mostTouchableLocker_2 - assert 10 == 20
+======================================= 1 failed, 12 passed, 1 warning in 1.98s =======================================
+================================================= test session starts =================================================
+platform win32 -- Python 3.8.3, pytest-6.1.1, py-1.9.0, pluggy-0.13.1
+rootdir: C:\Users\White_Devil.XD\Desktop\a
+plugins: timeout-1.4.2
+timeout: 5.0s
+timeout method: thread
+timeout func_only: False
+collected 13 items
+
+test_student.py .........F...                                                                                    [100%]
+
+====================================================== FAILURES =======================================================
+_____________________________________________ test_mostTouchableLocker_2 ______________________________________________
+
+    def test_mostTouchableLocker_2():
+>       assert mostTouchableLocker(20, 10) == 20
+E       assert 10 == 20
+E        +  where 10 = mostTouchableLocker(20, 10)
+
+test_student.py:37: AssertionError
+================================================== warnings summary ===================================================
+E:\CONDA\lib\site-packages\pyreadline\py3k_compat.py:8
+  E:\CONDA\lib\site-packages\pyreadline\py3k_compat.py:8: DeprecationWarning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated since Python 3.3, and in 3.9 it will stop working
+    return isinstance(x, collections.Callable)
+
+-- Docs: https://docs.pytest.org/en/stable/warnings.html
+=============================================== short test summary info ===============================================
+FAILED test_student.py::test_mostTouchableLocker_2 - assert 10 == 20
+======================================= 1 failed, 12 passed, 1 warning in 2.14s =======================================
+================================================= test session starts =================================================
+platform win32 -- Python 3.8.3, pytest-6.1.1, py-1.9.0, pluggy-0.13.1
+rootdir: C:\Users\White_Devil.XD\Desktop\a
+plugins: timeout-1.4.2
+timeout: 5.0s
+timeout method: thread
+timeout func_only: False
+collected 13 items
+
+test_student.py .........F...                                                                                    [100%]
+
+====================================================== FAILURES =======================================================
+_____________________________________________ test_mostTouchableLocker_2 ______________________________________________
+
+    def test_mostTouchableLocker_2():
+>       assert mostTouchableLocker(20, 10) == 20
+E       assert 10 == 20
+E        +  where 10 = mostTouchableLocker(20, 10)
+
+test_student.py:37: AssertionError
+================================================== warnings summary ===================================================
+E:\CONDA\lib\site-packages\pyreadline\py3k_compat.py:8
+  E:\CONDA\lib\site-packages\pyreadline\py3k_compat.py:8: DeprecationWarning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated since Python 3.3, and in 3.9 it will stop working
+    return isinstance(x, collections.Callable)
+
+-- Docs: https://docs.pytest.org/en/stable/warnings.html
+=============================================== short test summary info ===============================================
+FAILED test_student.py::test_mostTouchableLocker_2 - assert 10 == 20
+======================================= 1 failed, 12 passed, 1 warning in 1.89s =======================================
+================================================= test session starts =================================================
+platform win32 -- Python 3.8.3, pytest-6.1.1, py-1.9.0, pluggy-0.13.1
+rootdir: C:\Users\White_Devil.XD\Desktop\a
+plugins: timeout-1.4.2
+timeout: 5.0s
+timeout method: thread
+timeout func_only: False
+collected 13 items
+
+test_student.py .........F...                                                                                    [100%]
+
+====================================================== FAILURES =======================================================
+_____________________________________________ test_mostTouchableLocker_2 ______________________________________________
+
+    def test_mostTouchableLocker_2():
+>       assert mostTouchableLocker(20, 10) == 20
+E       assert 10 == 20
+E        +  where 10 = mostTouchableLocker(20, 10)
+
+test_student.py:37: AssertionError
+================================================== warnings summary ===================================================
+E:\CONDA\lib\site-packages\pyreadline\py3k_compat.py:8
+  E:\CONDA\lib\site-packages\pyreadline\py3k_compat.py:8: DeprecationWarning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated since Python 3.3, and in 3.9 it will stop working
+    return isinstance(x, collections.Callable)
+
+-- Docs: https://docs.pytest.org/en/stable/warnings.html
+=============================================== short test summary info ===============================================
+FAILED test_student.py::test_mostTouchableLocker_2 - assert 10 == 20
+======================================= 1 failed, 12 passed, 1 warning in 2.17s =======================================
+================================================= test session starts =================================================
+platform win32 -- Python 3.8.3, pytest-6.1.1, py-1.9.0, pluggy-0.13.1
+rootdir: C:\Users\White_Devil.XD\Desktop\a
+plugins: timeout-1.4.2
+timeout: 5.0s
+timeout method: thread
+timeout func_only: False
+collected 13 items
+
+test_student.py .............                                                                                    [100%]
+
+================================================== warnings summary ===================================================
+E:\CONDA\lib\site-packages\pyreadline\py3k_compat.py:8
+  E:\CONDA\lib\site-packages\pyreadline\py3k_compat.py:8: DeprecationWarning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated since Python 3.3, and in 3.9 it will stop working
+    return isinstance(x, collections.Callable)
+
+-- Docs: https://docs.pytest.org/en/stable/warnings.html
+============================================ 13 passed, 1 warning in 1.74s ============================================
